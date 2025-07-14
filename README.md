@@ -8,21 +8,21 @@ Repositori ini berisi kumpulan skrip JavaScript yang dirancang untuk mengotomati
 
 Ada dua jenis skrip utama dalam repositori ini, masing-masing untuk jenis formulir yang berbeda.
 
-### 1. `evaluasi-umum.js`
+### 1. `skip_avaluasi_1.js`
 Skrip ini ditujukan untuk formulir **evaluasi umum** yang memiliki format multi-halaman (misalnya, halaman 1 sampai 24).
 
 **Fitur:**
-* Secara otomatis memilih opsi jawaban pada setiap halaman.
+* Secara otomatis memilih opsi jawaban pada setiap halaman. **Untuk pilihan jawabaanya bisa disesuaikan masing masing.**
 * Secara otomatis mengklik tombol "Selanjutnya" untuk pindah ke halaman berikutnya.
 * Berhenti ketika semua halaman telah terisi.
 
-### 2. `evaluasi-dosen.js`
+### 2. `skip_avaluasi_2.js`
 Skrip ini dirancang untuk alur **evaluasi dosen** yang lebih kompleks, yang biasanya dimulai dari halaman dasbor.
 
 **Fitur:**
 * Memulai proses dari halaman daftar dosen dengan mengklik "Mulai Penilaian".
 * Masuk ke dalam mode perulangan (loop) untuk setiap dosen.
-* Mengisi semua pertanyaan di dalam *pop-up* (modal) untuk dosen saat ini.
+* Mengisi semua pertanyaan di dalam *pop-up* (modal) untuk dosen saat ini. **Untuk pilihan jawabaanya bisa disesuaikan masing masing.**
 * Mengklik "Simpan & Lanjutkan" untuk memuat form dosen berikutnya.
 * Berhenti secara otomatis setelah dosen terakhir selesai dievaluasi.
 
@@ -35,10 +35,10 @@ Langkah-langkah untuk menggunakan skrip ini sangat mudah:
 1.  **Pilih Skrip yang Tepat**: Tentukan formulir mana yang akan Anda isi dan pilih file skrip yang sesuai (`evaluasi-umum.js` atau `evaluasi-dosen.js`).
 
 2.  **Buka Halaman Awal**:
-    * Untuk `evaluasi-umum.js`, buka halaman pertama dari kuesioner tersebut.
-    * Untuk `evaluasi-dosen.js`, buka halaman **dasbor** tempat daftar dosen ditampilkan (sebelum mengklik "Mulai Penilaian").
+    * Untuk `skip_avaluasi_1.js`, buka halaman pertama dari kuesioner tersebut.
+    * Untuk `skip_avaluasi_2.js`, buka halaman **dasbor** tempat daftar dosen ditampilkan (sebelum mengklik "Mulai Penilaian").
 
-3.  **Buka Developer Tools**: Tekan tombol `F12` di keyboard Anda untuk membuka Developer Tools di browser.
+3.  **Buka Developer Tools**: Tekan tombol `F12` di keyboard Anda untuk membuka Developer Tools di browser. Atau bisa pergi ke titik 3 pada browser --> More Tools --> developer tools
 
 4.  **Buka Console**: Di jendela Developer Tools, klik tab **`Console`**.
 
